@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NaviPlan</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="papaparsemin.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body onload="loadData()">
+    <!--Displaying the Select College Dropdown Container-->
+    <div id="container" class="chooseCollege">
+      <label for="collegeName">Choose your College:</label>
+      <br />
+      <select
+        id="collegeName"
+        onchange="selectedCollegeName()"
+        class="selectCollege"
+      >
+        <option value="">Select College</option>
+      </select>
+    </div>
+    <!-- Display Fee Details Container-->
+    <div class="feeContainer" id="feeContainer">
+      <div class="feeDetails">
+        <input
+          type="radio"
+          name="stateFeeCheck"
+          id="inStateCheck"
+          checked="checked"
+          onchange="selectedCollegeName()"
+          disabled
+        />
+        <label for="inState">In State Fees</label>
+        <input
+          type="radio"
+          name="stateFeeCheck"
+          id="outStateCheck"
+          onchange="selectedCollegeName()"
+          disabled
+        />
+        <label for="outState">Out State Fees</label>
+        <input type="text" id="inState" disabled class="feeDisplay" />
+      </div>
+
+      <div class="feeDetails">
+        <input
+          type="checkbox"
+          name="roomBoardCheck"
+          id="roomBoardCheck"
+          onchange="selectedCollegeName()"
+          checked
+          disabled
+        />
+        <label for="roomBoard">Room & Board</label>
+        <input type="text" id="roomBoard" disabled class="feeDisplay" />
+      </div>
+
+      <div class="annualFeeDetails">
+        <label for="feeTotal">Annual Fees</label>
+        <input type="text" id="totalFee" disabled class="feeDisplay" />
+      </div>
+    </div>
+  </body>
+</html>

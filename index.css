@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  background-image: linear-gradient(
+    rgb(221, 222, 223),
+    rgba(255, 255, 255, 0.932)
+  );
+  background-repeat: no-repeat;
+  display: inline;
+}
+.chooseCollege {
+  background-color: floralwhite;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  padding: 5%;
+  margin: 5%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.selectCollege {
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.feeContainer {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  margin: 5%;
+  background-color: floralwhite;
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
+  padding: 0 5% 5% 5%;
+}
+
+.feeDetails {
+  display: flex;
+  flex-direction: column; /*row*/
+  flex-wrap: wrap;
+  position: relative;
+  background-color: #ffebcd00;
+  padding: 2% 2% 0 2%;
+  margin: 0;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: center;
+  width: 50%;
+}
+
+.feeDisplay {
+  color: black;
+  background-color: white;
+  height: 35px;
+  width: 100%;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.annualFeeDetails {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: ffebcd00;
+  /*padding:3%;
+    margin: 5%;*/
+  justify-content: flex-end;
+  /* align-items: flex-start; */
+  align-content: flex-end;
+  width: 50%;
+}
+
+input:hover {
+  border: 3px solid grey;
+}
+
+select:hover {
+  border: 5px solid grey;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: linear-gradient(lightgrey, grey);
+  }
+}
